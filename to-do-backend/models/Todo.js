@@ -5,9 +5,10 @@ const todoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    completed: {
-        type: Boolean,
-        default: false
+    description: {  // New field added
+        type: String,
+        required: false, // Optional field
+        default: ''
     },
     userId: {
         type: mongoose.Schema.Types.ObjectId,
